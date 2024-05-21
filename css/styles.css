@@ -251,32 +251,3 @@ ul {
     width: 264px;
     height: 104px;
 }
-.punctuality {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    width: 264px;
-    height: 104px;
-}
-.diligence {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    width: 264px;
-    height: 104px;
-}
-.technologies {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    width: 264px;
-    height: 104px;
-}
-
-

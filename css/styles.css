@@ -25,9 +25,24 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 24px;
+    margin-right: 76px;
+    margin-bottom: 24px;
+    margin-left: 332px;
 }
 .contact {
     font-style: normal;
+    display: flex;
+    gap: 40px;
+    margin-top: 24px;
+    margin-right: 156px;
+    margin-bottom: 24px;
+    margin-left: 332px;
 }
 
 .contact-menu {
@@ -41,8 +56,12 @@
 
 .solutions {
     background: #2e2f42;
+    width: 1440px;
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 292;
+    align-items: center;
 }
-
 .effective-solution {
     font-family: "Roboto", sans-serif;
     color: #fff;
@@ -51,6 +70,9 @@
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    flex-wrap: wrap;
+    padding-right: 316px;
+    padding-left: 316px;
 }
 
 .order-button {
@@ -62,6 +84,12 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    width: 169px;
+    height: 56px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 48px;
 }
 
 .order-button:hover {
@@ -82,6 +110,7 @@ ul {
     line-height: 1.11111;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: none;
 }
 
 .title {
@@ -175,3 +204,79 @@ ul {
 a {
     text-decoration: none;
 }
+h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.images {
+    display: block;
+}
+.container {
+    width: 1158px;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
+    margin-top: 24px;
+    margin-right: 76px;
+    margin-bottom: 24px;
+    margin-left: 156px;
+    width: 115px;
+    height: 24px;
+}
+.header-menu {
+    display: inline;
+}
+.qualifacation {
+    display: inline;
+}
+.strategy {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: 264px;
+    height: 104px;
+}
+.punctuality {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: 264px;
+    height: 104px;
+}
+.diligence {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: 264px;
+    height: 104px;
+}
+.technologies {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: 264px;
+    height: 104px;
+}
+
+

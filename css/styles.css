@@ -138,7 +138,7 @@ ul {
     padding-bottom: 120px;
     align-items: center;
 }
-.our-qualifacation {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -149,7 +149,6 @@ ul {
     clip-path: inset(100%);
     clip: rect(0 0 0);
     overflow: hidden;
-    display: none;
 }
 
 .list-qualifacation {

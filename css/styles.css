@@ -151,6 +151,9 @@ ul {
     clip: rect(0 0 0);
     overflow: hidden;
 }
+.list-qualifacation .link-qualifications {
+    width: calc((100% - 72px) / 4);
+}
 .list-qualifacation {
     display: flex;
     gap: 24px;

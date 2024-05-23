@@ -145,10 +145,15 @@ ul {
     margin: -1px;
     border: 0;
     padding: 0;
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0);
     overflow: hidden;
+}
+ 
+.list-strategy {
+    width: calc((100% - 72px) / 4);
 }
 
 .list-qualifacation {
@@ -163,7 +168,6 @@ ul {
     flex-direction: column;
     gap: 8px;
     margin-right: 24px;
-    width: calc((100% - 72px) / 4);
 }
 .title {
     font-family: "Roboto", sans-serif;

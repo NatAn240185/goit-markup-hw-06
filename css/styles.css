@@ -263,14 +263,13 @@ font-family: "Roboto", sans-serif;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2e2f42;
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .card-content-portfolio {
     align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
     gap: 8px;
     border-bottom: 1px solid #e7e9fc;

@@ -23,6 +23,9 @@ img {
 
 .header-menu {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -73,7 +76,21 @@ img {
     gap: 40px;
     align-items: center;
 }
-
+.link-studio {
+    padding: 24 0;
+    position: relative;
+    color: #404bbf;
+}
+.link-studio::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
 .contact {
     font-style: normal;
     margin-left: auto;
@@ -91,11 +108,16 @@ img {
 }
 
 .solutions {
-    background: #2e2f42;
-    align-items: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: url(https: //github.com/NatAn240185/goit-markup-hw-04/blob/main/images/people-office.jpg);
+    padding: 188px 0;
+    background-image: linear-gradient(to bottom,
+     rgba(46, 47, 66, 0.7), 
+     rgba(46, 47, 66, 0.7)),
+    url(../images/people.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin:  0 auto;
 }
 
 .effective-solution {
@@ -130,6 +152,8 @@ img {
     min-width: 169px;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .order-button:hover {
@@ -137,7 +161,9 @@ img {
 }
 
 .order-button:focus {
-    background: #404bbf;
+    background-color: #404bbf;
+
+
 }
 
 ul {
@@ -162,6 +188,17 @@ ul {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+   
 }
 
 .list-qualifacation .link-qualifications {
@@ -226,6 +263,8 @@ font-family: "Roboto", sans-serif;
     flex-direction: column;
     gap: 32px;
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .card-content {
@@ -234,6 +273,30 @@ font-family: "Roboto", sans-serif;
     flex-direction: column;
     gap: 8px;
     padding: 32px 0;
+}
+.icon-social-link {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    fill: #f4f4fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover {
+    background-color: #404bbf;;
+}
+.item-icon {
+    width: 40px;
+    height: 40px;
 }
 
 .our-team {
@@ -276,6 +339,13 @@ font-family: "Roboto", sans-serif;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
+}
+.link-portfolio {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-portfolio:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .footer-menu {
@@ -320,7 +390,28 @@ font-family: "Roboto", sans-serif;
     flex-wrap: wrap;
     max-width: 264px;
 }
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.footer-social-link {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    text-transform: uppercase;
 
+.footer-elipse {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-elipse:hover {
+    background-color: #31d0aa;
+}
 .link {
     color: #2e2f42;
     padding: 24px 0;

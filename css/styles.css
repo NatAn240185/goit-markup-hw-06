@@ -627,9 +627,6 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close {
-    align-items: center;
-    justify-content: center;
-    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close:hover {
@@ -640,12 +637,11 @@ ul {
 .button-close:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff
 }
-.close:hover {
+.button-close:hover .close {
     fill: #ffffff;
 }
-.close:focus {
+.button-close:focus .close {
     fill: #ffffff;
 }
 
@@ -707,7 +703,7 @@ ul {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.comment: {
+.comment {
     margin-bottom: 16px;
 }
 .modal-comment {
@@ -765,8 +761,8 @@ ul {
     fill: #f4f4fd;
 }
 
-.privacy-policy {
-    color: #4d5ae5;
+.privacy-polisy {
+    color: #4d5ae5;;
 }
 .modal-checkbox {
     padding-bottom: 24px;

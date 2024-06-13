@@ -611,8 +611,25 @@ ul {
     right: 24px;
     border-radius: 100%;
     border-radius: 100%;
-    background-color: #e7e9fc;
-     
+    background-color: #e7e9fc;  
+    border: none;
+}
+.close {
+    align-items: center;
+    justify-content: center;
+    fill: #2e2f42;
+}
+.button-close:hover{
+    background-color: #404bbf;
+}
+.button-close:focus {
+    background-color: #404bbf;
+}
+.close:hover {
+    fill: #fff;
+}
+.close:focus {
+    fill: #fff;
 }
 .modal-title {
     margin-top: 48px;
@@ -644,7 +661,13 @@ ul {
 .modal-input:focus {
     border-color: #4d5ae5;
 }
+.modal-input:hover {
+    border-color: #4d5ae5;
+}
 .modal-input:focus + .modal-icon {
+    fill: #4d5ae5;
+}
+.modal-input:hover +.modal-icon {
     fill: #4d5ae5;
 }
 .modal-field-wrap {
@@ -685,36 +708,49 @@ textarea {
 .modal-comment:focus {
     border-color: #4d5ae5;
 }
+.modal-comment:hover {
+    border-color: #4d5ae5;
+}
 .modal-check-text {
     text-align: center;
-    margin-left: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.policy-check:checked  {
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-}
 .policy-check {
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
 }
-.privacy-polisy {
+.check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-check:checked + .modal-check-text span {
+    border-radius: 2px;
+    border: 1px solid #404bbf;
+    background-color: #404bbf;
+    fill: #f4f4fd;
+}
+
+.privacy-policy {
     line-height: 1.33333;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+}
+.modal-checkbox {
+    padding-bottom: 24px;
 }
 .modal-button {
     display: block;
@@ -731,4 +767,5 @@ textarea {
     text-align: center;
     color: #fff;
     font-family: "Roboto", sans-serif;
+    
 }

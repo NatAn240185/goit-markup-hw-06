@@ -42,8 +42,70 @@
                 </li>
             </ul>
         </address>
+        <button type="button" class="open-menu-btn">
+            <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="mob-menu is-open">
+        <button type="button" class="mob-btn-close">
+            <svg width="8" height="8" class="mob-close">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="mob-header-nav">
+            <ul class="mob-header-menu-nav">
+                <li><a class="mob-link mob-link-studio" href="./index.html">Studio</a></li>
+                <li><a class="mob-link" href="">Portfolio</a></li>
+                <li><a class="mob-link" href="">Contacts</a></li>
+            </ul>
+        </nav>
+        <address class="mob-contact">
+            <ul class="mob-contact-menu">
+                <li>
+                    <a class="mob-contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li>
+                    <a class="mob-contact-link-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <div class="mob-social-link">
+        <ul class="icon-social-link mob-icon">
+            <li class="item-icon">
+                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="item-icon">
+                <a href="https://www.twitter.com/" target="_blank" class="social-link">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="item-icon">
+                <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="item-icon">
+                <a href="https://www.linkedin.com/" target="_blank" class="social-link">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        </div>
     </div>
     </header>
+    <!--Solutions-->
         <section class="solutions"> 
             <div class="container">
             <h1 class="effective-solution">Effective Solutions for Your Business</h1>
@@ -110,11 +172,11 @@
         </section>
         <!--Our Team-->
         <section class="section section-team">
-            <div class="container">
+            <div class="container team-container">
             <h2 class="our-team">Our Team</h2>
             <ul class="list-team">
                 <li class="personal">
-                    <img class="images" src="./images/foto.jpg" alt="Mark Guerrero" width="264">
+                    <img class="images" srcset="./images/mobile_mark.jpg 1x, ./images/foto.jpg 2x" src="./images/foto.jpg" alt="Mark Guerrero" width="264">
                 <div class="card-content">
                     <h3 class="title">Mark Guerrero</h3>
                     <p class="text">Product Designer</p>
@@ -151,7 +213,7 @@
                </div>  
                 </li>
                 <li class="personal">
-                    <img class="images" src="./images/foto1.jpg" alt="Tom Ford" width="264">
+                    <img class="images" srcset="./images/mobile_ford.jpg 1x, ./images/foto1.jpg 2x" src="./images/foto1.jpg" alt="Tom Ford" width="264">
                 <div class="card-content">
                     <h3 class="title">Tom Ford</h3>
                     <p class="text">Frontend Developer</p>
@@ -188,7 +250,7 @@
              </div>
                 </li>
                 <li class="personal">
-                    <img class="images" src="./images/foto2.jpg" alt="Camila Garcia" width="264">
+                    <img class="images" srcset="./images/mobile_garcia.jpg 1x, ./images/foto2.jpg 2x" src="./images/foto2.jpg" alt="Camila Garcia" width="264">
                     <div class="card-content">
                     <h3 class="title">Camila Garcia</h3>
                     <p class="text">Marketing</p>
@@ -225,7 +287,7 @@
                     </div>
                 </li>
                 <li class="personal">
-                    <img class="images" src="./images/foto3.jpg" alt="Daniel Wilson" width="264">
+                    <img class="images" srcset="./images/mobile_wilson.jpg 1x, ./images/foto3.jpg 2x" src="./images/foto3.jpg" alt="Daniel Wilson" width="264">
                     <div class="card-content">
                     <h3 class="title">Daniel Wilson</h3>
                     <p class="text">UI Designer</p>
@@ -271,11 +333,11 @@
             <ul class="list-portfolio">
                 <li class="link-portfolio">
                     <div class="box-overlay">
-                    <img class="images" src="./images/foto4.jpg" alt="Banking App" width="360">
+                    <img class="images" srcset="./images/mobil_banking.jpg 1x, ./images/foto4.jpg 2x " src="./images/foto4.jpg" alt="Banking App" width="360">
                     <p class="overlay">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                         App ·
-                        Cloud Storage App <code>box.overlay</code>
+                        Cloud Storage App
                     </p>
                     </div>
                     <div class="card-content-portfolio">
@@ -285,11 +347,11 @@
                 </li>
                 <li class="link-portfolio">
                     <div class="box-overlay">
-                            <img class="images" src="./images/foto5.jpg" alt="Cashless Payment" width="360">
+                            <img class="images" srcset="./images/mobil_payment.jpg 1x, ./images/foto5.jpg 2x" src="./images/foto5.jpg" alt="Cashless Payment" width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                                 App ·
-                                Cloud Storage App <code>box.overlay</code>
+                                Cloud Storage App
                             </p>
                             </div>
                     <div class="card-content-portfolio">
@@ -299,11 +361,11 @@
                 </li>
                 <li class="link-portfolio">
                     <div class="box-overlay">
-                    <img class="images" src="./images/foto6.jpg" alt="Meditation App" width="360">
+                    <img class="images" srcset="./images/mobil_app.jpg 1x, ./images/foto6.jpg 2x" src="./images/foto6.jpg" alt="Meditation App" width="360">
                     <p class="overlay">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                         App ·
-                        Cloud Storage App <code>box.overlay</code>
+                        Cloud Storage App 
                     </p>
                     </div>
                     <div class="card-content-portfolio">
@@ -313,11 +375,11 @@
                 </li>
                 <li class="link-portfolio">
                     <div class="box-overlay">
-                    <img class="images" src="./images/foto7.jpg" alt="Taxi Service" width="360">
+                    <img class="images" srcset="./images/mobil_taxi.jpg 1x, ./images/foto7.jpg 2x" src="./images/foto7.jpg" alt="Taxi Service" width="360">
                     <p class="overlay">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                         App ·
-                        Cloud Storage App <code>box.overlay</code>
+                        Cloud Storage App
                     </p>
                     </div>
                     <div class="card-content-portfolio">
@@ -327,11 +389,11 @@
                 </li>
                 <li class="link-portfolio">
                     <div class="box-overlay">
-                    <img class="images" src="./images/foto8.jpg" alt="Screen Illustrations" width="360">
+                    <img class="images" srcset="./images/mobil_screen.jpg 1x, ./images/foto8.jpg 2x" src="./images/foto8.jpg" alt="Screen Illustrations" width="360">
                     <p class="overlay">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                         App ·
-                        Cloud Storage App <code>box.overlay</code>
+                        Cloud Storage App
                     </p>
                     </div>
                     <div class="card-content-portfolio">
@@ -341,11 +403,11 @@
                 </li>
                 <li class="link-portfolio">
                     <div class="box-overlay">
-                    <img class="images" src="./images/foto9.jpg" alt="Online Courses" width="360">
+                    <img class="images" srcset="./images/mobil_courses.jpg 1x, ./images/foto9.jpg 2x" src="./images/foto9.jpg" alt="Online Courses" width="360">
                     <p class="overlay">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                         App ·
-                        Cloud Storage App <code>box.overlay</code>
+                        Cloud Storage App
                     </p>
                     </div>
                     <div class="card-content-portfolio">
@@ -412,7 +474,7 @@
         </div>
         </div>
         </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
      <div class="modal">
         <button type="button" class="button-close">
             <svg width="8" height="8" class="close">
